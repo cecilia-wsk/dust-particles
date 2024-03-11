@@ -11,6 +11,6 @@ void main() {
   vColor = vec4(0.4 + 0.35 * sin(angle+uTime*0.8));
 
   vec4 mvPosition = modelViewMatrix * vec4( pos.xyz, 1. );
-  gl_PointSize = .8 * ( 1. / - mvPosition.z );
+  gl_PointSize = .25 * ( 1. / - mvPosition.z );
   gl_Position = projectionMatrix * mvPosition;
 }

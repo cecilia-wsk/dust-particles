@@ -9,6 +9,6 @@ void main()	{
 	//newUV.x += 0.02*sin(newUV.y*20. + time);
 	
 	//gl_FragColor = vColor;
-	gl_FragColor = vec4( 1., 1., 1., .8);
+	gl_FragColor = vec4( 1., 1., 1., .5);
 	//gl_FragColor = vec4( 0.+cos(uTime*0.2), .5+cos(uTime*0.5), 1.+cos(uTime*0.1), .8);
 }
