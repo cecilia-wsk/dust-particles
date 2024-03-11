@@ -149,8 +149,8 @@ export default class Sketch {
 		}
 
 		this.fboTexture = new THREE.DataTexture( this.data, this.size, this.size, THREE.RGBAFormat, THREE.FloatType);
-		this.fboTexture.magFilter = THREE.LinearMipmapLinearFilter;
-		this.fboTexture.minFilter = THREE.LinearMipmapLinearFilter;
+		this.fboTexture.magFilter = THREE.NearestFilter;
+		this.fboTexture.minFilter = THREE.NearestFilter;
 		this.fboTexture.needsUpdate = true;
 
 		this.fboMaterial = new THREE.ShaderMaterial({
